@@ -7,22 +7,22 @@
 		<meta name="theme-color" content="#317EFB"/>
 		<link rel="apple-touch-icon" href="https://hugodoueil.fr/img/img-profile.webp">
 		<link rel="icon" type="image/ico" href="https://hugodoueil.fr/img/img-profile.ico"/>
-		<title>Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack</title>
+		<title>Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse</title>
 
 		<!-- DESCRIPTION DU SITE + FORMATS LIENS DANS LES RESEAUX SOCIAUX -->
-		<meta name="title" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta name="description" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta name="keywords" content="hugo, HUGO, Hugo, doueil, Doueil, DOUEIL, Hugo Doueil, hugo doueil, HUGO DOUEIL, portfolio, développement, dev, web, html, css, php, tailwind, tailwindcss, dev web, developpement, developpement web, bts, sio, 2022, 2023, BTS, SIO, Pardailhan, pardailhan, saint, gaudens, SAINT, GAUDENS, Saint, Gaudens, Saint-Gaudens, saint-gaudens, villeneuve, rivière, VILLENEUVE, RIVIERE, Villeneuve, Rivière, Villeneuve de Rivière, 31800, Toulouse, DQL, dql, Licence, licence, bac+3, bac, +3, BAC, Paul Sabatier, Informatique, département, Bureau, desktop">
+		<meta name="title" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta name="description" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta name="keywords" content="hugo, HUGO, Hugo, doueil, Doueil, DOUEIL, Hugo Doueil, hugo doueil, HUGO DOUEIL, portfolio, développement, dev, web, html, css, php, tailwind, tailwindcss, dev web, developpement, developpement web, bts, sio, 2022, 2023, BTS, SIO, Pardailhan, pardailhan, saint, gaudens, SAINT, GAUDENS, Saint, Gaudens, Saint-Gaudens, saint-gaudens, villeneuve, rivière, VILLENEUVE, RIVIERE, Villeneuve, Rivière, Villeneuve de Rivière, 31800, Toulouse, DQL, dql, Licence, licence, bac+3, bac, +3, BAC, Paul Sabatier, Informatique, département, Bureau, desktop, paul, sabatier, toulouse, iut, iut 3">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://hugodoueil.fr/">
-		<meta property="og:title" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta property="og:description" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta property="og:image" content="https://hugodoueil.fr/img/bg.webp">
+		<meta property="og:title" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta property="og:description" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta property="og:image" content="https://hugodoueil.fr/ressources/images/bg-2.webp">
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://hugodoueil.fr/">
-		<meta property="twitter:title" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta property="twitter:description" content="Hugo Doueil | Portfolio 2022 (MODE BUREAU) | Développeur Web / Fullstack">
-		<meta property="twitter:image" content="https://hugodoueil.fr/img/bg.webp">
+		<meta property="twitter:title" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta property="twitter:description" content="Hugo Doueil | Portfolio 2022 | Développeur Web / Fullstack | IUT 3 Paul Sabatier Toulouse">
+		<meta property="twitter:image" content="https://hugodoueil.fr//ressources/images/bg-2.webp">
 
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,32 +46,61 @@
 			  justify-content: center;
 			  transition: all 0.5s;
 			}
-			.shapes-7 {
-			  width: 40px;
-			  height: 40px;
-			  color:rgb(87 83 78);
-			  position: relative;
-			  background:
-			    conic-gradient(from 134deg at top   ,currentColor 92deg,#0000 0) top,
-			    conic-gradient(from -46deg at bottom,currentColor 92deg,#0000 0) bottom;
-			  background-size:100% 50%;
-			  background-repeat: no-repeat;
+			.spinner {
+			   width: 44.8px;
+			   height: 44.8px;
+			   animation: spinner-y0fdc1 2s infinite ease;
+			   transform-style: preserve-3d;
 			}
-			.shapes-7:before {
-			  content:'';
-			  position: absolute;
-			  inset:0;
-			  background:
-			    conic-gradient(from  -135deg at top 0    left   22px ,#0000 ,currentColor 1deg 90deg,#0000 0),
-			    conic-gradient(from  -45deg  at right 0  top    22px ,#0000 ,currentColor 1deg 90deg,#0000 0),
-			    conic-gradient(from   45deg  at bottom 0 right  22px ,#0000 ,currentColor 1deg 90deg,#0000 0),
-			    conic-gradient(from  135deg  at left  0  bottom 20px ,#0000 ,currentColor 1deg 90deg,#0000 0);
-			   animation: sh7 1.5s infinite cubic-bezier(0.3,1,0,1);
+
+			.spinner > div {
+			   background-color: #3f3f46;
+			   height: 100%;
+			   position: absolute;
+			   width: 100%;
+			   border: 2.2px solid #71717a;
 			}
-			@keyframes sh7 {
-			   33%  {inset:-10px;transform: rotate(0deg)}
-			   66%  {inset:-10px;transform: rotate(90deg)}
-			   100% {inset:0    ;transform: rotate(90deg)}
+
+			.spinner div:nth-of-type(1) {
+			   transform: translateZ(-22.4px) rotateY(180deg);
+			}
+
+			.spinner div:nth-of-type(2) {
+			   transform: rotateY(-270deg) translateX(50%);
+			   transform-origin: top right;
+			}
+
+			.spinner div:nth-of-type(3) {
+			   transform: rotateY(270deg) translateX(-50%);
+			   transform-origin: center left;
+			}
+
+			.spinner div:nth-of-type(4) {
+			   transform: rotateX(90deg) translateY(-50%);
+			   transform-origin: top center;
+			}
+
+			.spinner div:nth-of-type(5) {
+			   transform: rotateX(-90deg) translateY(50%);
+			   transform-origin: bottom center;
+			}
+
+			.spinner div:nth-of-type(6) {
+			   transform: translateZ(22.4px);
+			}
+
+			@keyframes spinner-y0fdc1 {
+			   0% {
+			      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+			   }
+
+			   50% {
+			      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+			   }
+
+			   100% {
+			      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+			   }
 			}
 
 			::-webkit-scrollbar {
@@ -90,6 +119,9 @@
 	<body style="font-family: Poppins, sans-serif;" class="md:overflow-hidden">
 
 		<div class="loader z-[99999] bg-stone-700">
+
+			<p class="absolute text-[150px] font-bold text-stone-700 top-8 left-8" style="-webkit-text-stroke: 1px #fff; font-family: Arial, sans-serif; line-height: 155px;">HUGOOS-V6.4</p>
+
 			<div class="block">
 
 				<div class="w-[45vh] p-3 bg-stone-900 border border-stone-700 rounded-lg shadow shadow-stone-900 animate__animated animate__fadeInRight">
@@ -180,7 +212,14 @@
 							
 							<div class="mt-4 flex items-center justify-center h-[10vh]">
 					
-								<div class="shapes-7"></div>
+								<div class="spinner">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
 
 							</div>
 
@@ -244,15 +283,35 @@
 
 					<div class="w-full flex items-center justify-center px-6 mt-2">
 						
-						<p class="text-[14px] text-gray-400 text-center">Pour rentrer sur mon portfolio, veuillez cliquer sur le bouton "Entrez dans le bureau".</p>
+						<p class="text-[14px] text-gray-400 text-center">Pour rentrer sur mon portfolio, veuillez cliquer sur le bouton "Voir mon portfolio".</p>
 
 					</div>
 
 					<div class="w-full bg-blue-500 hover:bg-blue-400 transition-all flex items-center justify-center py-2 mt-8 rounded-md cursor-pointer" onclick="fermer_fenetreBienvenue()">
 						
-						<p class="text-[14px] text-white text-center">Entrez dans le bureau</p>
+						<p class="text-[14px] text-white text-center">Voir mon portfolio</p>
 
 					</div>
+
+					<div class="w-full mt-5 border-t border-stone-700"></div>
+
+					<a href="https://github.com/Ormidales"><div class="w-full bg-gray-500 hover:bg-gray-400 transition-all flex items-center justify-center py-2 mt-5 rounded-md cursor-pointer">
+						
+						<p class="text-[14px] text-white text-center">Voir mon Github</p>
+
+					</div></a>
+
+					<a href="https://www.linkedin.com/in/hugodoueil/"><div class="w-full bg-gray-500 hover:bg-gray-400 transition-all flex items-center justify-center py-2 mt-3 rounded-md cursor-pointer">
+						
+						<p class="text-[14px] text-white text-center">Voir mon Linkedin</p>
+
+					</div></a>
+
+					<a href="https://hugodoueil-ressources.netlify.app"><div class="w-full bg-gray-500 hover:bg-gray-400 transition-all flex items-center justify-center py-2 mt-3 rounded-md cursor-pointer">
+						
+						<p class="text-[14px] text-white text-center">Voir mes ressources</p>
+
+					</div></a>
 
 				</div>
 
@@ -1009,6 +1068,150 @@
 					</div>
 
 					<div id="app-projets-body-grid" class="w-full grid grid-cols-2 gap-5">
+
+						<!-- CARD D'UN PROJET -->
+						<div class="w-[35vh] rounded-lg bg-stone-900 border border-stone-700 overflow-hidden cursor-pointer group animals">
+						
+							<div class="w-full h-[15vh] bg-[url('ressources/images/moneyconvertor.png')] bg-cover bg-center p-3">
+								
+								<a href="https://github.com/Ormidales/JAVA-moneyConvertor" onclick="window.open(this.href); return false;"><p class="text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+									</svg>
+
+									Voir le projet
+								</p></a>
+
+								<a href="https://github.com/Ormidales/JAVA-moneyConvertor#readme" onclick="window.open(this.href); return false;"><p class="mt-2 text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+									</svg>
+
+									Voir la documentation du projet
+
+								</p></a>
+
+							</div>
+
+							<div class="w-full p-3">
+								
+								<p class="text-[14px] text-white">moneyConvertor - JAVA</p>
+
+								<div class="w-full">
+									
+									<p class="text-[12px] text-gray-400">La classe moneyConvertor est une implémentation Java simple d'un convertisseur de devise. Elle permet de convertir des euros européens (EURO) en dollars américains (USD) et vice versa.</p>
+
+								</div>
+
+								<div class="w-full mt-5 flex items-center">
+									
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all">JAVA</span>
+
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all ml-2">Junit</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- CARD D'UN PROJET -->
+						<div class="w-[35vh] rounded-lg bg-stone-900 border border-stone-700 overflow-hidden cursor-pointer group animals">
+						
+							<div class="w-full h-[15vh] bg-[url('ressources/images/tictactoe.png')] bg-cover bg-center p-3">
+								
+								<a href="https://github.com/Ormidales/JAVA-TicTacToe" onclick="window.open(this.href); return false;"><p class="text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+									</svg>
+
+									Voir le projet
+								</p></a>
+
+								<a href="https://github.com/Ormidales/JAVA-TicTacToe#readme" onclick="window.open(this.href); return false;"><p class="mt-2 text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+									</svg>
+
+									Voir la documentation du projet
+
+								</p></a>
+
+							</div>
+
+							<div class="w-full p-3">
+								
+								<p class="text-[14px] text-white">TicTacToe - JAVA</p>
+
+								<div class="w-full">
+									
+									<p class="text-[12px] text-gray-400">This is a simple implementation of the Tic-Tac-Toe game in Java. It allows two players to play the game in the command line by taking turns entering the row and column where they want to place their mark.</p>
+
+								</div>
+
+								<div class="w-full mt-5 flex items-center">
+									
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all">JAVA</span>
+
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all ml-2">Junit</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- CARD D'UN PROJET -->
+						<div class="w-[35vh] rounded-lg bg-stone-900 border border-stone-700 overflow-hidden cursor-pointer group animals">
+						
+							<div class="w-full h-[15vh] bg-[url('ressources/images/passwordgenerator.png')] bg-cover bg-center p-3">
+								
+								<a href="https://github.com/Ormidales/JAVA-PasswordGenerator" onclick="window.open(this.href); return false;"><p class="text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+									</svg>
+
+									Voir le projet
+								</p></a>
+
+								<a href="https://github.com/Ormidales/JAVA-PasswordGenerator#readme" onclick="window.open(this.href); return false;"><p class="mt-2 text-[11px] text-[11px] text-white bg-stone-800/50 hover:bg-stone-800/75 border border-stone-700/75 hover:border-stone-900/75 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all flex items-center shadow shadow-black/10 backdrop-blur-xl">
+
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									  	<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+									</svg>
+
+									Voir la documentation du projet
+
+								</p></a>
+
+							</div>
+
+							<div class="w-full p-3">
+								
+								<p class="text-[14px] text-white">PasswordGenerator - JAVA</p>
+
+								<div class="w-full">
+									
+									<p class="text-[12px] text-gray-400">Ce projet permet de générer des mots de passe aléatoires et sécurisés en java.</p>
+
+								</div>
+
+								<div class="w-full mt-5 flex items-center">
+									
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all">JAVA</span>
+
+									<span class="px-2 py-1 text-[10px] text-white rounded-md bg-white/5 hover:bg-white/10 transition-all ml-2">Junit</span>
+
+								</div>
+
+							</div>
+
+						</div>
 
 						<!-- CARD D'UN PROJET -->
 						<div class="w-[35vh] rounded-lg bg-stone-900 border border-stone-700 overflow-hidden cursor-pointer group animals">
@@ -3339,7 +3542,7 @@
 
 PORTFOLIO HUGO DOUEIL 2022
 DEVELOPPER PAR HUGO DOUEIL
-LYCEE PARDAILHAN AUCH 2022
+IUT TOULOUSE 3 PAUL SABATIER 2022
 
 TailwindCss
 HTML
